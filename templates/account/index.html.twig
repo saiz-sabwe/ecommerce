@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AccountController!{% endblock %}
+
+{% block content %}
+
+    <h1>Mon Compte Boutique</h1>
+    <h2>Bienvenu(e) {{app.user.firstname}} dans votre espace boutique</h2>
+
+    <p>c'est ici que vous allez gerer toutes les informarions sur botre comptes</p>
+
+    <hr>
+    <a href="{{path('account_password')}}">Modifier votre mot de passe</a>
+
+
+{% endblock %}
